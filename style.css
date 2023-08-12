@@ -99,11 +99,9 @@ header.sticky{
    
 }
 .navbar a{
-    color: var(--second-color);
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 25px;
-    transition: all .45s ease;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left:4rem ;
 }
 .navbar a:hover
 {
@@ -133,12 +131,9 @@ header.sticky{
 
 #menu-icon
 {
-    font-size:35px;
+    font-size: 3.6rem;
     color: var(--text-color);
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display: none;
+    display: none
 }
 
 .home{
@@ -439,7 +434,7 @@ span{
     animation-delay: calc(var(--i)*0.05s);
 }
 
-
+/*portfolio section */
 
 .filter-buttons{
     margin: 2rem;
@@ -555,7 +550,7 @@ span{
     color: var(--text-color);
 }
 
-
+/*contact section*/
 
 .contact{
     background: var(--second-bg-color);
@@ -597,7 +592,7 @@ span{
     color: var(--main-color);
 }
 
-
+/*footer section*/
 footer{
    padding: 1.5rem 10%;
    display: flex;
@@ -703,8 +698,6 @@ footer a i{
 }
 
 
-
-/media query/
 
 @media (max-width:1124px)
 {
