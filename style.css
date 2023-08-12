@@ -99,9 +99,11 @@ header.sticky{
    
 }
 .navbar a{
-    font-size: 1.7rem;
-    color: var(--text-color);
-    margin-left:4rem ;
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
 }
 .navbar a:hover
 {
@@ -131,9 +133,12 @@ header.sticky{
 
 #menu-icon
 {
-    font-size: 3.6rem;
+    font-size:35px;
     color: var(--text-color);
-    display: none
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
 }
 
 .home{
@@ -550,7 +555,7 @@ span{
     color: var(--text-color);
 }
 
-/*contact section*/
+/contact section/
 
 .contact{
     background: var(--second-bg-color);
@@ -592,7 +597,7 @@ span{
     color: var(--main-color);
 }
 
-/*footer section*/
+/footer section/
 footer{
    padding: 1.5rem 10%;
    display: flex;
@@ -699,8 +704,7 @@ footer a i{
 
 
 
-/*media query*/
-
+/media query/
 
  @media( max-width:799px){
     nav{
@@ -829,5 +833,9 @@ footer a i{
     .navbar.open{
         top: 100%;
     }
+}
+@media (max-width:815px)
+{
+
 
 }
