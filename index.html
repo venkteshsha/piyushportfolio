@@ -407,7 +407,20 @@
         <a href="#home"> <i class='bx bx-up-arrow-alt'></i></a>
      </footer>
     <script src="mixitup.min.js"></script>
-     <script src="script.js"></script>
+      <script>
+        
+        let menu=document.querySelector('#menu-icon');
+      let navbar=document.querySelector('.navbar');
+      menu.onclick = () => {
+          menu.classList.toggle('bx-x');
+          navbar.classList.toggle('open');
+      };
+      window.onscroll = () => {
+          menu.classList.remove('bx-x');
+          navbar.classList.remove('open');
+      };
+     
+         </script>
 
   
 </body>
