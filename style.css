@@ -439,7 +439,7 @@ span{
     animation-delay: calc(var(--i)*0.05s);
 }
 
-/*portfolio section */
+
 
 .filter-buttons{
     margin: 2rem;
@@ -555,7 +555,7 @@ span{
     color: var(--text-color);
 }
 
-/contact section/
+
 
 .contact{
     background: var(--second-bg-color);
@@ -597,7 +597,7 @@ span{
     color: var(--main-color);
 }
 
-/footer section/
+
 footer{
    padding: 1.5rem 10%;
    display: flex;
