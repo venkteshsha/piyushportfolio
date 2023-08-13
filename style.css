@@ -877,6 +877,7 @@ footer a i{
 }
 }
 @media(max-width:820px)
+{
 .filter-buttons {
         margin: 0rem;
         text-align: center;
@@ -895,4 +896,4 @@ footer a i{
         margin-bottom: 2rem;
         color: var(--text-color);
     }
-
+}
