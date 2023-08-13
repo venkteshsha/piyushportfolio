@@ -523,12 +523,12 @@ let section = document.querySelectorAll('section');
     <script>
     function sendEmail(){
         Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'them@website.com',
-            From : "you@isp.com",
-            Subject : "This is the subject",
+            Host : "smtp.gmail.com",
+            Username : "venkteshsha11@gmail.com",
+            Password : "Venktesh1234@",
+            To : 'venkteshsharma11@gmail.com',
+            From : document.getElementById("email").value,,
+            Subject : "New contact Enquiry",
             Body : "And this is the body"
         }).then(
           message => alert(message)
