@@ -831,7 +831,7 @@ footer a i{
         width: 0vw;
     }
 }
-@media(max-width:385px)
+@media(max-width:620px)
 {
     .filter-buttons {
         margin: 0rem;
