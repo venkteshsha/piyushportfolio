@@ -753,6 +753,10 @@ footer a i{
 
 @media (max-width:1124px)
 {
+    section {
+    min-height: 78vh;
+    padding: 10rem 9% 2rem;
+}
     #menu-icon{
         display: block;
     }
