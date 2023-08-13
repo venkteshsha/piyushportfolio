@@ -43,7 +43,7 @@
                 <h3>
                     <span class="word">Graphic&nbsp; Designer</span>
                     <span class="word">UX&nbsp; Designer</span>
-                    <span class="word">Vedio&nbsp; Editor</span>
+                    <span class="word">Video&nbsp; Editor</span>
                 </h3>
             </div>
             <p>Experienced Graphic, UX, and Motion Designer with over 3 years of proven expertise in creating visually stunning and user-centric designs. Proficient in translating complex concepts into captivating visuals, enhancing user experiences through intuitive interfaces, and bringing designs to life with dynamic motion graphics. Adept at collaborating with cross-functional teams and clients to deliver impactful design solutions. Passionate about staying up-to-date with design trends and technologies to consistently produce innovative and engaging designs.
@@ -112,7 +112,7 @@
      <!--skils section-->
      <section class="skills" id="skills">
         <div class="main-text scroll-scale">
-            <span>Technical n Professional</span>
+            <span>Technical And Professional</span>
             <h2>My Skills</h2>
         </div>
 
@@ -183,7 +183,7 @@
                 </div>
                 <div class="skill-bar">
                     <div class="info">
-                        <p>Coral Draw</p>
+                        <p>Corel Draw</p>
                         <p>60%</p>
                     </div>
                     <div class="bar">
@@ -239,7 +239,7 @@
     
 <section class="portfolio" id="portfolio">
         <div class="main-text scroll-scale">
-            <span>What i will do for you</span>
+            <span>What i can do for you</span>
             <h2>Latest Projects</h2>
         </div>
 
@@ -249,7 +249,7 @@
                <button class="btn" data-filter="all">All</button>
                <button class="btn" data-filter=".ux">UX Design</button>
                <button class="btn"data-filter=".so">Social Media & Broucher Works</button>
-               <button class="btn"data-filter=".lv">Logo's,Vedio & Games</button>
+               <button class="btn"data-filter=".lv">Logo's,Video & Games</button>
                 
                   
 
@@ -392,12 +392,12 @@
             <h2>Contact Me</h2>
         </div>
 
-        <form action="#" class="scroll-Bottom">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Your Address">
-            <input type="number" placeholder="Your Number">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Messages"></textarea>
+       <form onsubmit="sendEmail(); reset(); return false;" class="scroll-Bottom">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="text" id="address" placeholder="Your Address">
+            <input type="number" id="number" placeholder="Your Number">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Messages"></textarea>
 
             <div class="btn-box form-btn">
                 <button type="submit" class="btn">Send Message</button>
@@ -519,6 +519,22 @@ let section = document.querySelectorAll('section');
     scrollTop.forEach((el)=>observer.observe(el));
      
          </script>
+         <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+     </script>
 
   
 </body>
