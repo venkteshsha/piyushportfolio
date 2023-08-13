@@ -478,7 +478,7 @@ let section = document.querySelectorAll('section');
     
     let changeText =()=>{
         let currentWord = words[currentWordIndex];
-        let nextWord = currentWord === maxWordIndex ? words[0] : words[currentWordIndex + 1];
+        let nextWord = currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
     
         Array.from(currentWord.children).forEach((letter,i)=>{
             setTimeout(()=>{
